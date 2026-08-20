@@ -316,15 +316,15 @@ def main():
             st.subheader("Equity Series")
             st.dataframe(result.equity.tail(100), use_container_width=True)
 
-            st.subheader("Suggested Modifications")
-            suggestions: Iterable[str] = [
-                "Add transaction costs and slippage to match the notebook's simulated execution more closely.",
-                "Make the strategy selector configurable so you can switch between mean reversion and momentum from the UI.",
-                "Export the results DataFrame to CSV for comparison runs.",
-                "Validate that the uploaded file has a sorted datetime index and no missing close values before running.",
-            ]
-            for suggestion in suggestions:
-                st.write(f"- {suggestion}")
+            # st.subheader("Suggested Modifications")
+            # suggestions: Iterable[str] = [
+            #     "Add transaction costs and slippage to match the notebook's simulated execution more closely.",
+            #     "Make the strategy selector configurable so you can switch between mean reversion and momentum from the UI.",
+            #     "Export the results DataFrame to CSV for comparison runs.",
+            #     "Validate that the uploaded file has a sorted datetime index and no missing close values before running.",
+            # ]
+            # for suggestion in suggestions:
+            #     st.write(f"- {suggestion}")
 
 
 if __name__ == "__main__":
